@@ -51,7 +51,11 @@ img {
         border-radius: 50%;
         object-fit: cover;
 }
-
+#schueller-image {
+    display: block;
+    margin: 20px auto 0 auto;
+    transform: translateX(20px);
+}
 code,
 pre {
     background: #333;
@@ -183,7 +187,7 @@ pre {
 }
 
 
-/* Features */
+/* features */
 .card {
     display: flex;
     flex-direction: column;
@@ -196,10 +200,16 @@ pre {
 }
 
 .features-sub-head img,
-.docs-head img {
-    width: 300px;
-    justify-self: flex-end;
+.home-head img {
+   width: 300px;
+   justify-self: flex-end;
+  
 
+}
+.features-sub-head img {
+    width: 700px;
+    height: 450px;
+    justify-self: flex-end;
 }
 
 .features-main .card>i {
@@ -208,7 +218,7 @@ pre {
 }
 
 .features-main .grid {
-    padding: 30px;
+    padding: 20px;
 }
 
 .features-main .grid>*:first-child {
@@ -219,25 +229,32 @@ pre {
 .features-main .grid>*:nth-child(2) {
     grid-column: 1 / span 2;
 }
+.links a:hover{
+    color: #047aed;
+    font-weight: bold;
+}
 
-/* Docs */
-.docs-main h3 {
+
+
+/* home */
+.home-main h3 {
     margin: 20px 0;
 }
 
-.docs-main .grid {
+.home-main .grid {
     grid-template-columns: 1fr 2fr;
     align-items: flex-start;
 }
 
-.docs-main nav li {
+.home-main nav li {
     font-size: 17px;
     padding-bottom: 5px;
     margin-bottom: 5px;
     border-bottom: 1px #ccc solid;
 }
 
-.docs-main a:hover {
+.home-main  a:hover {
+    color: #047aed;
     font-weight: bold;
 }
 
@@ -245,6 +262,9 @@ pre {
 .footer.social a {
     width: 90;
     margin: 0 10px;
+}
+.footer.social a a:hover{
+    color: #047aed;
 }
 
 /* Animations */
@@ -305,7 +325,7 @@ pre {
     .cli .grid,
     .cloud.grid,
     .features-main .grid,
-    .docs-main .grid {
+    .home-main .grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
@@ -335,13 +355,13 @@ pre {
 
     .features-head img,
     .features-sub-head img,
-    .docs-head img {
+    .home-head img {
         text-align: center;
     }
 
     .features-head,
     .features-sub-head,
-    .docs-head {
+    .home-head {
         justify-self: center;
     }
 
